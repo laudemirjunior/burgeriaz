@@ -1,6 +1,6 @@
 @import "../../styles/library";
 
-header {
+.header__container {
   @include flexCenter();
   width: 100%;
   nav {
