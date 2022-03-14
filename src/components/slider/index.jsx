@@ -49,6 +49,11 @@ export default function Slider() {
     }
   };
 
+  setTimeout(() => {
+    let image = document.querySelector(".slider__current");
+    image.classList.add("animate__image");
+  }, 10000);
+
   return (
     <div className="slider__container">
       <div className="slider__main">
@@ -60,7 +65,7 @@ export default function Slider() {
           <img
             src={hamburgueres[number].image}
             alt=""
-            className="animate__image slider__current"
+            className="slider__current"
             onClick={(event) => next(event)}
           />
         </div>
