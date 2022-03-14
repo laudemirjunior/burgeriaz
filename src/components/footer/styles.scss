@@ -1,0 +1,78 @@
+@import "../../styles/library";
+
+.footer__container {
+  width: 95%;
+  max-width: $max;
+  display: flex;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  gap: 50px;
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.footer_about {
+  width: 100%;
+  max-width: 400px;
+  h1 {
+    color: $orange;
+    font-size: 24px;
+    span {
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+    }
+  }
+  p {
+    color: $gray;
+  }
+  div {
+    position: absolute;
+    left: 0;
+    height: 5px;
+    width: 2%;
+    margin-top: 10px;
+    background-color: $black;
+    @media (min-width: 2048px) {
+      width: 10%;
+    }
+  }
+}
+
+.footer_social {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  p {
+    color: $gray;
+  }
+  .footer__sociais {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+    .footer__svg {
+      @include flexCenter();
+      width: 28px;
+      height: 28px;
+      background-color: $black;
+      border-radius: 50%;
+      padding: 2.5px;
+      box-shadow: 0 0 0 8px $white;
+      transition: ease-in-out 0.5s;
+      svg {
+        font-size: 18px;
+        color: $white;
+      }
+    }
+    .footer__svg:hover {
+      transform: scale(1.2);
+    }
+    h1 {
+      font-size: 24px;
+    }
+  }
+}

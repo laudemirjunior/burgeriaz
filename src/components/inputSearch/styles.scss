@@ -1,0 +1,38 @@
+@import "../../styles//library";
+
+form {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 95%;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 0.5px solid $orange;
+  input {
+    border: none;
+    width: 85%;
+    height: 100%;
+    padding-left: 30px;
+    font-size: 20px;
+  }
+  input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  }
+  div {
+    @include flexCenter();
+    width: 15%;
+    height: 100%;
+    .search {
+      color: $gray;
+      font-size: 30px;
+    }
+  }
+  .menu__white {
+    background-color: $white;
+  }
+  .menu__gray {
+    background-color: $lightGray;
+  }
+}

@@ -1,0 +1,26 @@
+$white: #ffffff;
+$black: #0e0d2a;
+$lightGray: #f5f5f5;
+$gray: #707070;
+$gray2: #70707027;
+$orange: #e39b00;
+
+$open: "Open Sans", sans-serif;
+$archivo: "Archivo Black", sans-serif;
+$modak: "Modak", cursive;
+$roboto: "Roboto", sans-serif;
+
+$radius: 20px;
+$max: 1612px;
+
+$notebook: 1024px;
+$tablet: 768px;
+$smartphone: 425px;
+
+$width: 90%;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

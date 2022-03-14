@@ -1,0 +1,70 @@
+@import "../../styles/library";
+
+.banner__container {
+  @include flexCenter();
+  width: 100%;
+  flex-direction: column;
+  text-align: left;
+  gap: 30px;
+  @media (min-width: $notebook) {
+    text-align: center;
+    align-items: baseline;
+  }
+  h2 {
+    font-family: $open;
+    color: $gray;
+    font-weight: 300;
+    @media (max-width: $notebook) {
+      text-align: center;
+      align-items: baseline;
+    }
+  }
+  h1 {
+    font-size: 4em;
+    font-family: $modak;
+    font-weight: 100;
+    @media (max-width: $notebook) {
+      font-size: 3em;
+    }
+    span {
+      color: $orange;
+      font-family: $modak;
+    }
+    span:hover {
+      transform: rotate(360deg);
+    }
+  }
+  p {
+    font-family: 17px;
+    color: $gray;
+    font-weight: 300;
+    text-align: left;
+    @media (max-width: $notebook) {
+      text-align: center;
+      align-items: baseline;
+    }
+  }
+  button {
+    width: 205px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid $gray;
+    font-family: $open;
+    color: $gray;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  button:hover {
+    border: 3px solid $orange;
+    color: $orange;
+  }
+}
+
+.phase {
+  text-align: left;
+  line-height: 300%;
+  @media (max-width: $smartphone) {
+    font-size: 0.6em;
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../styles/library";
+
+header {
+  @include flexCenter();
+  width: 100%;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: $max;
+    margin-top: 40px;
+  }
+}
+@keyframes animator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header__logo {
+  @include flexCenter();
+  a {
+    color: $black;
+    font-weight: 900;
+    font-size: 24px;
+  }
+  span {
+    color: $orange;
+    transition: 5s;
+  }
+  a:hover span {
+    position: absolute;
+    animation: animator 1s;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  a {
+    display: flex;
+    @media (max-width: $notebook) {
+      display: none;
+    }
+  }
+  form {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  svg {
+    transition: ease-in-out 0.5s;
+  }
+  svg:hover {
+    transform: scale(1.2);
+  }
+}
+
+.header__bar {
+  font-size: 40px;
+  color: $orange;
+  cursor: pointer;
+  display: none;
+  @media (max-width: $notebook) {
+    display: flex;
+  }
+}
