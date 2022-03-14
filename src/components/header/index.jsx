@@ -1,20 +1,20 @@
 import "./styles.scss";
+import { useState } from "react";
 import { CgMenuRightAlt } from "react-icons/cg";
 import Logo from "../../assets/logo.svg";
 import MenuHamburguer from "../menuHamburguer";
 import InputSearch from "../inputSearch";
-import { useState } from "react";
 
 export default function Header() {
   const [show, setShow] = useState(false);
 
-  const url = window.location.href.split("3000")[1];
+  const url = window.location.pathname;
 
   return (
     <header>
       <nav>
         <div className="header__logo">
-          <img src={Logo} alt="logo" />
+          <img src={Logo} alt="Logo" />
           <a href="/">
             BURGER<span>IAZ</span>
           </a>
@@ -33,7 +33,6 @@ export default function Header() {
           <a className="link" href="/">
             Main Course
           </a>
-
           <InputSearch color={false} />
           <CgMenuRightAlt
             className="header__bar"
