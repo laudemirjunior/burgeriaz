@@ -1,5 +1,5 @@
-import { CgMenuRightAlt } from "react-icons/cg";
 import "./styles.scss";
+import { CgMenuRightAlt } from "react-icons/cg";
 import Logo from "../../assets/logo.svg";
 import MenuHamburguer from "../menuHamburguer";
 import InputSearch from "../inputSearch";

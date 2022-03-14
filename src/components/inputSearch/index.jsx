@@ -1,6 +1,5 @@
-import React from "react";
-import { AiOutlineSearch } from "react-icons/ai";
 import "./styles.scss";
+import { AiOutlineSearch } from "react-icons/ai";
 
 export default function InputSearch({ color = true }) {
   function handleSubmit(e) {

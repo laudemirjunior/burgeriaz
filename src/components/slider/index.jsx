@@ -1,6 +1,6 @@
+import "./styles.scss";
 import { useEffect, useState } from "react";
 import { GiPauseButton, GiPlayButton } from "react-icons/gi";
-import "./styles.scss";
 import hamburgueres from "./list.js";
 
 export default function Slider() {

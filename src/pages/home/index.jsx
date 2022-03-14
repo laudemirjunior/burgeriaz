@@ -1,9 +1,8 @@
-import React from "react";
+import "./styles.scss";
 import Banner from "../../components/banner";
 import Footer from "../../components/footer";
-import Header from "../../components/header/index";
+import Header from "../../components/header";
 import Slider from "../../components/slider";
-import "./styles.scss";
 
 export default function Home() {
   return (

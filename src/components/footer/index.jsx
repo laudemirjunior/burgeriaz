@@ -1,8 +1,7 @@
-import React from "react";
+import "./styles.scss";
 import { ImFacebook } from "react-icons/im";
 import { FiInstagram } from "react-icons/fi";
 import { AiOutlineTwitter } from "react-icons/ai";
-import "./styles.scss";
 
 export default function Footer() {
   return (
