@@ -39,7 +39,7 @@ export default function Slider() {
   };
 
   const isPause = () => {
-    let image = document.querySelector(".slider__current");
+    let image = document.querySelector(".slider__image");
     if (pause) {
       image.classList.remove("animate__image");
       setPause(false);

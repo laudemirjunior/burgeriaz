@@ -11,7 +11,7 @@ export default function Header() {
   const url = window.location.pathname;
 
   return (
-    <header>
+    <header className="header__container">
       <nav>
         <div className="header__logo">
           <img src={Logo} alt="Logo" />

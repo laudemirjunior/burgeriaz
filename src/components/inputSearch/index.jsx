@@ -8,7 +8,9 @@ export default function InputSearch({ color = true }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className={color ? "menu__white" : "menu__gray"}
+      className={
+        color ? "from__container menu__white" : "from__container menu__gray"
+      }
     >
       <input
         placeholder="Search"

@@ -8,6 +8,7 @@
   display: flex;
   justify-content: right;
   align-items: center;
+  margin: 50px 0;
   @media (max-width: $notebook) {
     justify-content: center;
   }
@@ -31,15 +32,15 @@
     opacity: 0;
     margin-left: -50px;
   }
-  2% {
+  5% {
     opacity: 0;
     margin-left: -50px;
   }
-  7% {
+  10% {
     opacity: 1;
     margin-left: 0px;
   }
-  95% {
+  90% {
     opacity: 1;
     margin-left: 0px;
   }
@@ -50,7 +51,7 @@
 }
 
 .animate__image {
-  animation: transition__image 10s ease-in-out infinite;
+  animation: transition__image 10s ease infinite;
 }
 
 .slider__image {

@@ -1,19 +1,21 @@
 @import "../../styles/library";
 
-article {
-  width: $width;
-  max-width: $max;
-  display: flex;
-  justify-content: space-between;
-  margin: 50px auto;
-  @media (max-width: $notebook) {
-    flex-direction: column;
-    align-items: center;
+.home__container {
+  article {
+    width: $width;
+    max-width: $max;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    @media (max-width: $notebook) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
 .home__circle {
-  position: fixed;
+  position: absolute;
   z-index: -1;
   background-color: $white;
   width: 100vw;
