@@ -22,6 +22,15 @@ export default function Slider() {
     }
   }, [number, pause]);
 
+  useEffect(() => {
+    let image = document.querySelector(".slider__image");
+    image.classList.add("animate__image");
+    const interval = setInterval(() => {
+      image.classList.remove("animate__image");
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [number]);
+
   const next = (event) => {
     const coords = (event) => event.clientX;
     let width = document.querySelector(".slider__image").clientWidth;
@@ -47,6 +56,13 @@ export default function Slider() {
       image.classList.add("animate__image");
       setPause(true);
     }
+  };
+
+  const change = (index) => {
+    let image = document.querySelector(".slider__image");
+    image.classList.remove("animate__image");
+    setNumber(index);
+    image.classList.add("animate__image");
   };
 
   return (
@@ -82,7 +98,7 @@ export default function Slider() {
             {hamburgueres.map((_, index) => (
               <div
                 key={index}
-                onClick={() => setNumber(index)}
+                onClick={() => change(index)}
                 className={
                   number === index ? "slider__dot slider__scale" : "slider__dot"
                 }

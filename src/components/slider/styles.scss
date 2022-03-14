@@ -32,27 +32,15 @@
     opacity: 0;
     margin-left: -50px;
   }
-  5% {
-    opacity: 0;
-    margin-left: -50px;
-  }
-  10% {
-    opacity: 1;
-    margin-left: 0px;
-  }
-  90% {
-    opacity: 1;
-    margin-left: 0px;
-  }
   100% {
-    opacity: 0;
-    margin-left: 50px;
+    opacity: 1;
+    margin-left: 0px;
   }
 }
 
-// .animate__image {
-//   animation: transition__image 10s ease infinite;
-// }
+.animate__image {
+  animation: transition__image 2s ease;
+}
 
 .slider__image {
   width: inherit;
