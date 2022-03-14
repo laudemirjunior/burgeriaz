@@ -54,6 +54,7 @@
     justify-content: right;
     align-items: center;
     gap: 30px;
+    margin-right: 10px;
     .footer__svg {
       @include flexCenter();
       width: 28px;

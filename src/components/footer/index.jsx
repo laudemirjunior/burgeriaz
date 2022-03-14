@@ -21,15 +21,15 @@ export default function Footer() {
       <div className="footer_social">
         <div className="footer__sociais">
           <p>Don’t Miss Our Promo On</p>
-          <div className="footer__svg">
+          <a href="/" className="footer__svg">
             <ImFacebook />
-          </div>
-          <div className="footer__svg">
+          </a>
+          <a href="/" className="footer__svg">
             <FiInstagram />
-          </div>
-          <div className="footer__svg">
+          </a>
+          <a href="/" className="footer__svg">
             <AiOutlineTwitter />
-          </div>
+          </a>
         </div>
       </div>
     </div>

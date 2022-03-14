@@ -3,6 +3,7 @@
 .banner__container {
   @include flexCenter();
   width: 100%;
+  max-width: 550px;
   flex-direction: column;
   text-align: left;
   gap: 30px;

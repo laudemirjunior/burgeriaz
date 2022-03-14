@@ -29,23 +29,19 @@
 @keyframes transition__image {
   0% {
     opacity: 0;
-    margin-left: -100px;
-  }
-  50% {
-    opacity: 0.5;
     margin-left: -50px;
   }
-  100% {
+  15% {
     opacity: 1;
-    margin-left: -0px;
+    margin-left: 0px;
   }
 }
 
-// .animate__image {
-//   animation: transition__image 2s ease-in;
-// }
+.animate__image {
+  animation: transition__image 10s ease-in-out infinite;
+}
 
-.image {
+.slider__image {
   width: inherit;
   z-index: 1;
   margin-top: 60px;
@@ -121,6 +117,9 @@ svg:hover {
     -webkit-text-stroke: 0.5px $gray;
     font-weight: 900;
     text-align: center;
+    @media (max-width: $tablet) {
+      font-size: 10em;
+    }
     @media (max-width: $smartphone) {
       font-size: 8em;
     }

@@ -2,12 +2,13 @@ import { CgMenuRightAlt } from "react-icons/cg";
 import "./styles.scss";
 import Logo from "../../assets/logo.svg";
 import MenuHamburguer from "../menuHamburguer";
-import Link from "../link";
 import InputSearch from "../inputSearch";
 import { useState } from "react";
 
 export default function Header() {
   const [show, setShow] = useState(false);
+
+  const url = window.location.href.split("3000")[1];
 
   return (
     <header>
@@ -19,9 +20,20 @@ export default function Header() {
           </a>
         </div>
         <div className="header__menu">
-          <Link children={"New Menu"} />
-          <Link children={"About Us"} />
-          <Link children={"Main Course"} />
+          <a
+            className="link"
+            href="/"
+            style={url === "/" && { fontWeight: "500", color: "black" }}
+          >
+            New Menu
+          </a>
+          <a className="link" href="/">
+            About Us
+          </a>
+          <a className="link" href="/">
+            Main Course
+          </a>
+
           <InputSearch color={false} />
           <CgMenuRightAlt
             className="header__bar"

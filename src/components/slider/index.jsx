@@ -15,7 +15,7 @@ export default function Slider() {
         } else {
           setNumber(0);
         }
-      }, 5000);
+      }, 10000);
       return () => clearInterval(interval);
     } else {
       clearInterval();
@@ -38,6 +38,17 @@ export default function Slider() {
     }
   };
 
+  const isPause = () => {
+    let image = document.querySelector(".slider__current");
+    if (pause) {
+      image.classList.remove("animate__image");
+      setPause(false);
+    } else {
+      image.classList.add("animate__image");
+      setPause(true);
+    }
+  };
+
   return (
     <div className="slider__container">
       <div className="slider__main">
@@ -45,11 +56,11 @@ export default function Slider() {
           <h1>BUR</h1>
           <h1>GER</h1>
         </div>
-        <div className="image">
+        <div className="slider__image">
           <img
             src={hamburgueres[number].image}
             alt=""
-            className="slider__image"
+            className="animate__image slider__current"
             onClick={(event) => next(event)}
           />
         </div>
@@ -59,7 +70,12 @@ export default function Slider() {
           </h2>
         </div>
         <div className="slider__controls">
-          <div onClick={() => setPause(!pause)} className="slider__pause">
+          <div
+            onClick={() => {
+              isPause();
+            }}
+            className="slider__pause"
+          >
             {pause ? <GiPauseButton /> : <GiPlayButton />}
           </div>
           <div className="slider__dots">
