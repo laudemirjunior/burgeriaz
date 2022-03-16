@@ -65,11 +65,6 @@ export default function Slider() {
     image.classList.add("animate__image");
   };
 
-  useEffect(() => {
-    let image = document.querySelector(".slider__image");
-    image.classList.add("animate__image");
-  }, []);
-
   return (
     <div className="slider__container">
       <div className="slider__main">
