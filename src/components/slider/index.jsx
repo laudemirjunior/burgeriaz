@@ -15,7 +15,7 @@ export default function Slider() {
         } else {
           setNumber(0);
         }
-      }, 10000);
+      }, 4000);
       return () => clearInterval(interval);
     } else {
       clearInterval();
@@ -65,6 +65,11 @@ export default function Slider() {
     image.classList.add("animate__image");
   };
 
+  useEffect(() => {
+    let image = document.querySelector(".slider__image");
+    image.classList.add("animate__image");
+  }, []);
+
   return (
     <div className="slider__container">
       <div className="slider__main">
@@ -72,7 +77,7 @@ export default function Slider() {
           <h1>BUR</h1>
           <h1>GER</h1>
         </div>
-        <div className="animate__image slider__image">
+        <div className="slider__image">
           <img
             src={hamburgueres[number].image}
             alt=""

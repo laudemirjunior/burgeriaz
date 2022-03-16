@@ -32,10 +32,6 @@
     opacity: 0;
     margin-left: -50px;
   }
-  10% {
-    opacity: 0;
-    margin-left: -50px;
-  }
   100% {
     opacity: 1;
     margin-left: 0px;
@@ -43,7 +39,7 @@
 }
 
 .animate__image {
-  animation: transition__image 2s ease;
+  animation: transition__image 1.5s cubic-bezier(0.32, 0, 0.67, 0);
 }
 
 .slider__image {
